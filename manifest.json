@@ -1,0 +1,24 @@
+{
+  "default_locale": "en_US",
+  "manifest_version": 2,
+  "name": "__MSG_appName__",
+  "description": "Hide/Block/Remove forced ad that covers up the viewport",
+  "version": "1.0",
+  "content_scripts": [{
+    "js": ["adblock.js"],
+    "matches": [
+      "http://www.onlinekhabar.com/*",
+      "*://localhost/*"
+    ],
+    "run_at": "document_end"
+  }],
+  "permissions": [
+    "tabs",
+    "http://www.onlinekhabar.com/*",
+    "*://localhost/*"
+  ],
+  "background": {
+    "page": "adblock-bkg.html"
+  },
+  "web_accessible_resources": ["rules.json"]
+}

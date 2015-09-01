@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "description": "App name.",
+    "message": "Adblock"
+  },
+  "appDesc": {
+    "description": "App desc.",
+    "message": "Hide/Block/Remove annoying ad overlays"
+  }
+}

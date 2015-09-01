@@ -1,0 +1,8 @@
+{
+	"www.onlinekhabar.com": {
+		"query": ["#message,#message1"]
+	},
+	"localhost": {
+		"query": ["#masonry"]
+	}
+}
