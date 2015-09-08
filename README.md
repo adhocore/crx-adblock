@@ -4,6 +4,12 @@
 - hide/block/remove custom forceful banners from any webpage
 - add rules in rules.json
 
+
+# installation
+
+- follow similiar instruction as [this](https://github.com/adhocore/crx-joom/blob/master/README.md#how) but remember to use name `crx-adblock`
+
+
 # rules (how-to)
 
 ```json
