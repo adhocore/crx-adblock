@@ -6,17 +6,10 @@
   "version": "1.0",
   "content_scripts": [{
     "js": ["adblock.js"],
-    "matches": [
-      "http://www.onlinekhabar.com/*",
-      "*://localhost/*"
-    ],
-    "run_at": "document_end"
+    "matches": ["http://*/*", "https://*/*"],
+    "run_at": "document_idle"
   }],
-  "permissions": [
-    "tabs",
-    "http://www.onlinekhabar.com/*",
-    "*://localhost/*"
-  ],
+  "permissions": ["tabs", "*://*/*"],
   "background": {
     "page": "adblock-bkg.html"
   },

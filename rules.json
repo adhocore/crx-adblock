@@ -1,8 +1,20 @@
 {
-	"www.onlinekhabar.com": {
-		"query": ["#message,#message1"]
-	},
-	"localhost": {
-		"query": ["#masonry"]
-	}
+  "localhost": {
+    "query": ["#masonry"]
+  },
+  "www.onlinekhabar.com": {
+    "query": [
+      "#message,#message1,.middlead,.ttmob,#right_tauko",
+      "#taboola-below-article-thumbnails,#sidebar_main"
+    ]
+  },
+  "www.nagariknews.com": {
+    "query": [
+      ".advertisements,.customadvertisements\\,",
+      "#iadsbanner-top980,.custom"
+    ]
+  },
+  "www.mysansar.com": {
+    "query": ["#right"]
+  }
 }
