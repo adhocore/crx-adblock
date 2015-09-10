@@ -15,17 +15,20 @@ var Adblock = Adblock || {
   block: function(xhrEvt) {
     var config = xhrEvt.target.responseText;
         config = JSON.parse(config);
-        config = config[document.location.hostname];
-    if (!config) {
+    var _config = config[document.location.hostname];
+    if (typeof _config == 'string') {
+      _config = config[_config];
+    }
+    if (!_config) {
       return;
     }
-    for (var key in config) {
+    for (var key in _config) {
       if (key === 'call') {
         config[key].forEach(function(cb) {
           try { cb.call(); } catch (e) {}
         });
       } else {
-        el = config[key].join(',');
+        el = _config[key].join(',');
         chrome.runtime.sendMessage({
           elm: el
         });

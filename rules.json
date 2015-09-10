@@ -8,12 +8,14 @@
       "#taboola-below-article-thumbnails,#sidebar_main"
     ]
   },
+  "onlinekhabar.com": "www.onlinekhabar.com",
   "www.nagariknews.com": {
     "query": [
       ".advertisements,.customadvertisements\\,",
       "#iadsbanner-top980,.custom"
     ]
   },
+  "nagariknews.com": "www.nagariknews.com",
   "www.mysansar.com": {
     "query": ["#right"]
   }
