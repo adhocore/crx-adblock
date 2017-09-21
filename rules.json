@@ -6,7 +6,8 @@
     "query": [
       "#message,#message1,.middlead,.ttmob,#right_tauko",
       "#taboola-below-article-thumbnails,#sidebar_main"
-    ]
+    ],
+    "call": ["hideMessage"]
   },
   "onlinekhabar.com": "www.onlinekhabar.com",
   "www.nagariknews.com": {

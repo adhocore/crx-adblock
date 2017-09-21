@@ -15,6 +15,13 @@
 ```json
 "hostname": {
 	"query":[".selector1,.selector2", "#selector3"],
-	"call": "some callback function name"
+	"call": "evalable function body"
+}
+```
+OR
+```json
+"hostname": {
+	"query":".selector1,.selector2", "#selector3",
+	"call": ["existing_function_name"]
 }
 ```
